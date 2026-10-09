@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "DM Sans", sans-serif; 
+  --font-secondary: "Chivo", sans-serif;
+
+  --color-primary: #43E7DF;
+  --color-secondary: #3639A4;
+
+  --color-titleColor: #2C2643;
+  --color-paraColor: #645E76;
+}
+
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  border-radius: 20px;
+}
+
+/* Responsive layout safeguards for phone and tablet widths */
+html, body, #root { width: 100%; min-height: 100%; margin: 0; }
+html { overflow-x: clip; }
+body { overflow-x: clip; }
+img, video, canvas, svg { max-width: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+.slick-slider { max-width: 100%; }
+.slick-list { overflow: hidden; }
+@media (max-width: 767px) {
+  section { max-width: 100%; }
+  .slick-dots { position: relative; bottom: auto; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  section { max-width: 100%; }
+}
